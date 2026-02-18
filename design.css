@@ -1,0 +1,202 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x800');
+    background-size: cover;
+    color: white;
+}
+.hero img {
+    width: 200px;
+    height: 240px;
+    border-radius: 23%;
+}
+
+.highlight {
+    color: #3498db;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* Projects */
+.container {
+    padding: 4rem 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer & Scroll Button */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+}
+
+#scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Contact Section Styles */
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: 2px solid #3498db;
+    border-color: transparent;
+}
+
+.contact-form .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start; /* Keeps the button from stretching full-width */
+}
+.direct-email {
+    text-align: center;
+    margin-top: 25px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.direct-email p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Optional: Make the email button a different color so it stands out */
+.email-btn {
+    background: #2ecc71; /* A nice green color */
+}
+
+.email-btn:hover {
+    background: #27ae60;
+}
+#dynamic-text {
+    border-right: 3px solid #3498db; /* Blue cursor */
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: #3498db; }
+    100% { border-color: transparent; }
+}
