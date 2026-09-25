@@ -9,7 +9,10 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">Candidate Of Information Technology</div>
+        <div class="logo">
+            <span id="typing-text"></span><span class="cursor">|</span>
+        </div>
+
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -18,9 +21,11 @@
     </nav>
 
     <header id="home" class="hero">
-        <img src="pic.jpeg" alt="">
-        <h1>Hi, I'm <span class="highlight">Badal Kumar</span></h1>
-        <p>A passionate developer creating digital experiences.</p>
+        <img src="pic.jpeg" alt="Profile Picture">
+        <h1>
+            Hi, I'm <span class="highlight" id="hero-name"></span>
+        </h1>
+        <p id="hero-description"></p>
         <a href="#projects" class="btn">View My Work</a>
     </header>
 

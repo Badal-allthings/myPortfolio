@@ -17,33 +17,94 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10%;
-    background: #2c3e50;
+    background: #111827;
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    /* Subtle depth */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
+
+/* Logo */
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #00d4ff;
+    transform: translateY(-1px);
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background: #111827;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Typing Logo */
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    min-width: 250px;
+}
+
+.cursor {
+    color: #00d4ff;
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Navigation */
 
 .nav-links {
     list-style: none;
     display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
-    color: white;
+    color: #d1d5db;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
+.nav-links a:hover {
+    color: #00d4ff;
+}
 /* Hero Section */
 .hero {
     height: 80vh;
